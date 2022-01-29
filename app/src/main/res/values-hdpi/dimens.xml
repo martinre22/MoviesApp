@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- CardViewItemListMovies -->
+    <dimen name="text_size_text_view_movie_title_card_view_movies">16sp</dimen>
+    <dimen name="margin_left_text_view_movie_title_card_view_movies">2dp</dimen>
+    <dimen name="height_relative_layout_card_view_movies">60dp</dimen>
+    <dimen name="weight_relative_layout_card_view_movies">0.1</dimen>
+    <dimen name="margin_start_container_image_view_movie">6dp</dimen>
+    <dimen name="margin_start_container_title_movie_card_view_movies">8dp</dimen>
+
+    <!-- PopularMoviesView -->
+    <dimen name="text_size_text_view_actual_page_popular_movies_view">12sp</dimen>
+
+
+    <!-- DetailsMovieView -->
+    <dimen name="text_size_movie_title_detail_movie_view">14sp</dimen>
+    <dimen name="text_size_text_view_overview_movie_detail_view">12sp</dimen>
+    <dimen name="text_size_text_view_overview_description_movie_detail_view">12sp</dimen>
+</resources>

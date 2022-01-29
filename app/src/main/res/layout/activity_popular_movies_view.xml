@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowPopularMovies.view.PopularMoviesView"
+    android:background="@color/grey_200">
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_top_card_popular_movies_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.01"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_container_recycler_view_popular_movies_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.915"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relative_layout_top_card_popular_movies_view"
+        app:layout_constraintWidth_percent="0.9">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_popular_movies_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_bottom_popular_movies_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.075"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relative_layout_container_recycler_view_popular_movies_view"
+        app:layout_constraintWidth_percent="0.9">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/image_button_previous_page_popular_movies_view"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_arrow_left"
+                android:contentDescription="@string/string_content_description_previous_page_popular_movies_view"></ImageButton>
+
+            <TextView
+                android:id="@+id/text_view_actual_page_popular_movies_view"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/string_text_view_actual_page_popular_movies_view"
+                android:textSize="@dimen/text_size_text_view_actual_page_popular_movies_view"
+                android:textStyle="bold"></TextView>
+            <ImageButton
+                android:id="@+id/image_button_next_page_popular_movies_view"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_arrow_right"
+                android:contentDescription="@string/string_content_description_next_page_popular_movies_view"></ImageButton>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

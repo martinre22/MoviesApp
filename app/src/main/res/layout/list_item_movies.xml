@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="2dp"
+    app:cardPreventCornerOverlap="true"
+    android:animateLayoutChanges="true"
+    app:cardUseCompatPadding="true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_layout_card_view_movies"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="6dp">
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_container_image_view_title_card_view_movie"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_relative_layout_card_view_movies"
+            android:layout_marginStart="@dimen/margin_start_container_image_view_movie"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.2">
+
+            <ImageView
+                android:id="@+id/image_view_poster_movie"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/string_content_description_image_view_poster_card_view_movie"
+                android:scaleType="fitCenter"
+                android:src="@drawable/error512"></ImageView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_container_title_description_card_view_movie"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_relative_layout_card_view_movies"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/relative_layout_container_image_view_title_card_view_movie"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.74">
+
+            <TextView
+                android:id="@+id/text_view_movie_title_card_view_movies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/margin_left_text_view_movie_title_card_view_movies"
+                android:text="@string/string_text_view_movie_title_card_view_movies"
+                android:textSize="@dimen/text_size_text_view_movie_title_card_view_movies"></TextView>
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Movies App</string>
+
+    <!-- CardViewItemListMovies -->
+    <string name="string_text_view_movie_title_card_view_movies">---</string>
+    <string name="string_content_description_image_view_poster_card_view_movie">portada pelicula</string>
+
+    <!-- PopularMoviesView -->
+    <string name="string_text_view_actual_page_popular_movies_view">0</string>
+    <string name="string_content_description_previous_page_popular_movies_view">anterior</string>
+    <string name="string_content_description_next_page_popular_movies_view">siguiente</string>
+
+    <!-- MenuPopularMoviesView -->
+    <string name="string_language_menu_popular_movie">Language</string>
+    <string name="string_search_menu_popular_movie">Buscar</string>
+
+    <!-- DetailsMovieView -->
+    <string name="string_text_view_movie_title_detail_movie_view">Title</string>
+    <string name="string_text_view_overview_movie_detail_view">Sinopsis</string>
+    <string name="string_text_view_overview_description_movie_detail_view">description</string>
+    <string name="text_view_genre_detail_view_movie">Genero</string>
+    <string name="text_view_release_detail_view_movie">Fecha de Lanzamiento</string>
+    <string name="text_view_rate_movie_details_movie_view">rate</string>
+    <string name="content_description_image_view_rate_details_movie_view">rateimage</string>
+    <string name="text_view_rate_detail_view_movie">Calificacion:</string>
+</resources>
